@@ -1,0 +1,30 @@
+html {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+
+/*main section*/
+
+.main-section-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-img {
+    height: 320px;
+    width: 300px;
+    margin: 2rem;
+    border-radius: 10%;
+    padding: 1rem 1rem;
+}
