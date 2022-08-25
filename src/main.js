@@ -59,3 +59,23 @@ async function getMovies() {
 }
 
 getMovies()
+
+//Call to Api films
+
+async function getFilms() {
+    const results = await API("/films");
+
+    const films = results.data;
+    films.forEach(film => {
+
+        const mainSectionFilms = document.querySelector(".film-section-container");
+
+        const mainSectionFilmsImg = document.createElement("img");
+        mainSectionFilmsImg.classList.add("film-movies");
+        mainSectionFilmsImg.setAttribute("src", "https://image.tmdb.org/t/p/bestv2/" + film.image);
+
+        mainSectionFilms.appendChild(mainSectionFilmsImg)
+    });
+}
+
+getFilms()

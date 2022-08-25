@@ -12,6 +12,17 @@ body {
 
 /*header navbar*/
 
+.back-arrow {
+    background-color: #ffffff;
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    margin: 5% 5px 5px -15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 580;
+}
+
 .header-search-btn {
     background-color: #ffffff;
     position: fixed;
@@ -208,6 +219,38 @@ li a {
 
 .main-section-img:hover {
     transform: translateZ(10px);
+}
+
+
+/*Films section*/
+
+.film-section {
+    height: 100vh;
+}
+
+.film-section-title {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 20% 5% 10%;
+}
+
+.film-section-container {
+    display: flex;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden !important;
+}
+
+.film-movies {
+    height: 180px;
+    width: 150px;
+    margin: 15px 5px 25px 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 25px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 
