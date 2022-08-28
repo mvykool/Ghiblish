@@ -16,11 +16,16 @@ body {
     background-color: #ffffff;
     position: fixed;
     border: none;
-    border-radius: 10px;
+    border-radius: 50%;
     padding: 5px 7px;
-    margin: 15% 5px 5px 10%;
+    margin: 10% 5px 5px 10%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 580;
+}
+
+.back-img {
+    height: 28px;
+    width: 28px;
 }
 
 .header-search-btn {
@@ -256,29 +261,30 @@ li a {
 
 /*details*/
 
-#detail-section {
-    overflow: scroll;
-    height: 100%;
+.detail-movie-img {
+    height: 60vh;
+    width: 100vw;
+    align-self: center;
+    size: cover;
 }
 
 .detail-section-container {
+    margin-top: -40%;
     width: 100%;
-    height: 100%;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50%;
     padding-bottom: 50%;
     overflow-y: auto;
 }
 
 .glass {
     width: 85%;
-    height: 80%;
     background-color: rgba(150, 150, 150, 0.5);
     border-radius: 5%;
     backdrop-filter: blur(5px);
-    margin: 20% 15% 15% 7%;
+    margin: 5% 15% 15% 7%;
 }
 
 .detail-section-title-jap {

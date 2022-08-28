@@ -90,11 +90,8 @@ async function getDetail(myId) {
 
 
 
-    const detailImg = document.querySelector(".detail-section-container");
-    detailImg.style.backgroundImage = "url(https://image.tmdb.org/t/p/bestv2/" + films.image + ")";
-    detailImg.style.backgroundSize = "cover";
-    detailImg.style.backgroundPosition = "center";
-    detailImg.style.backgroundRepeat = "no-repeat";
+    const detailImg = document.querySelector(".detail-movie-img");
+    detailImg.setAttribute("src", "https://image.tmdb.org/t/p/bestv2/" + films.image);
 
 
     const detailTitleJap = document.querySelector(".detail-section-title-jap");
@@ -113,10 +110,10 @@ async function getDetail(myId) {
     detailYear.textContent = films.release_date;
 
     const detailScore = document.querySelector(".detail-score");
-    detailScore.textContent = films.rt_score + " ⭐";
+    detailScore.textContent = " ⭐" + films.rt_score;
 
 }
 
-const myId = "12cfb892-aac0-4c5b-94af-521852e46d6a";
+const myId = "2baf70d1-42bb-4437-b551-e5fed5a87abe";
 
 getDetail(myId);
