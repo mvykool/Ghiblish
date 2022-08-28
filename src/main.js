@@ -82,43 +82,41 @@ getFilms()
 
 //call to API details
 
-async function getDetails() {
-    const results = await API("/films/2baf70d1-42bb-4437-b551-e5fed5a87abe");
+async function getDetail(myId) {
+
+    const results = await API("/films/" + myId);
 
     const films = results.data;
-    films.forEach(film => {
-        const detailSection = document.querySelector(".detai-section-container");
-
-        const detailSectionImg = document.createElement("img");
-        detailSectionImg.classList.add("detail-img");
-        detailSectionImg.setAttribute("src", "https://image.tmdb.org/t/p/bestv2/" + film.image);
-
-        const detailSectionInfo = document.querySelector("detail-info-container");
-        const detailTitleJap = document.querySelector("detail-title-jap");
-        detailTitleJap.setAttribute(film.original_title);
-        const detailTitle = document.querySelector("detail-title");
-        detailTitle.setAttribute(film.title);
-        const detailText = document.querySelector("detail-text");
-        detailText.setAttribute(film.description);
-        const detailDirector = document.querySelector(".detail-director");
-        detailDirector.setAttribute(film.director);
-        const detailYear = document.querySelector(".detail-year");
-        detailYear.setAttribute(film.release_date);
-        const detailScore = document.querySelector(".detail-score");
-        detailScore.setAttribute(film.rt_score);
-
-        detailSectionInfo.appendChild(detailTitleJap);
-        detailSectionInfo.appendChild(detailTitle);
-        detailSectionInfo.appendChild(detailText);
-        detailSectionInfo.appendChild(detailDirector);
-        detailSectionInfo.appendChild(detailYear);
-        detailSectionInfo.appendChild(detailScore);
-
-        detailSection.appendChild(detailSectionInfo);
-        detailSection.appendChild(detailSectionImg);
 
 
-    });
+
+    const detailImg = document.querySelector(".detail-section-container");
+    detailImg.style.backgroundImage = "url(https://image.tmdb.org/t/p/bestv2/" + films.image + ")";
+    detailImg.style.backgroundSize = "cover";
+    detailImg.style.backgroundPosition = "center";
+    detailImg.style.backgroundRepeat = "no-repeat";
+
+
+    const detailTitleJap = document.querySelector(".detail-section-title-jap");
+    detailTitleJap.textContent = films.original_title;
+
+    const detailTitle = document.querySelector(".detail-section-title");
+    detailTitle.textContent = films.title;
+
+    const detailText = document.querySelector(".detail-text");
+    detailText.textContent = films.description;
+
+    const detailDirector = document.querySelector(".detail-director");
+    detailDirector.textContent = films.director;
+
+    const detailYear = document.querySelector(".detail-year");
+    detailYear.textContent = films.release_date;
+
+    const detailScore = document.querySelector(".detail-score");
+    detailScore.textContent = films.rt_score + " ⭐";
+
 }
 
-getDetails();
+const myId = "12cfb892-aac0-4c5b-94af-521852e46d6a";
+
+getDetail(myId);
