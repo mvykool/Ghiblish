@@ -52,13 +52,17 @@ async function getMovies() {
         mainSectionMoviesImg.classList.add("main-section-img");
         mainSectionMoviesImg.classList.add("main-section-img-size");
         mainSectionMoviesImg.setAttribute("src", "https://image.tmdb.org/t/p/bestv2/" + film.image);
+        mainSectionMoviesImg.addEventListener("click", () => {
+            location.hash = "#movie=" + film.id;
+            location.reload();
+        });
 
         mainSectionMoviesContainer.appendChild(mainSectionMoviesImg);
         mainSectionMovies.appendChild(mainSectionMoviesContainer);
     });
 }
 
-getMovies()
+
 
 //Call to Api films
 
@@ -73,18 +77,22 @@ async function getFilms() {
         const mainSectionFilmsImg = document.createElement("img");
         mainSectionFilmsImg.classList.add("film-movies");
         mainSectionFilmsImg.setAttribute("src", "https://image.tmdb.org/t/p/bestv2/" + film.image);
+        mainSectionFilmsImg.addEventListener("click", () => {
+            location.hash = "#movie=" + film.id;
+            location.reload();
+        });
 
         mainSectionFilms.appendChild(mainSectionFilmsImg)
     });
 }
 
-getFilms()
+
 
 //call to API details
 
-async function getDetail(myId) {
+async function getDetail(movieId) {
 
-    const results = await API("/films/" + myId);
+    const results = await API("/films/" + movieId);
 
     const films = results.data;
 
@@ -113,7 +121,3 @@ async function getDetail(myId) {
     detailScore.textContent = " ⭐" + films.rt_score;
 
 }
-
-const myId = "2baf70d1-42bb-4437-b551-e5fed5a87abe";
-
-getDetail(myId);

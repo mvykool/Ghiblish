@@ -17,40 +17,15 @@ body {
     position: fixed;
     border: none;
     border-radius: 50%;
-    padding: 5px 7px;
     margin: 10% 5px 5px 10%;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 580;
 }
 
-.back-img {
+.back-imgs {
+    margin-top: 5%;
     height: 28px;
     width: 28px;
-}
-
-.header-search-btn {
-    background-color: #ffffff;
-    position: fixed;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 7px;
-    margin: 10px 10px 5px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    z-index: 580;
-}
-
-.header-search-btn-img {
-    height: 28px;
-    width: 28px;
-}
-
-.header-search-input {
-    height: 28px;
-    margin-top: 4%;
-    width: 300px;
-    position: fixed;
-    z-index: 580;
-    margin-right: 15%;
 }
 
 .header-menu {
@@ -59,7 +34,7 @@ body {
     border: none;
     border-radius: 10px;
     padding: 7px 7px 5px;
-    margin: 15% 10px 10px;
+    margin: 5% 10px 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 580;
 }
@@ -261,8 +236,12 @@ li a {
 
 /*details*/
 
+.detail-section {
+    margin-top: -5%;
+}
+
 .detail-movie-img {
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
     align-self: center;
     size: cover;
@@ -340,7 +319,7 @@ svg {
 }
 
 footer {
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
     margin-top: -10px;
     border-radius: 15px 50px;

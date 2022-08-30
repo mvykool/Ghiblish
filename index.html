@@ -22,23 +22,17 @@
         <!--header with nav-bar-->
         <section class="header-nav-bar" id="header-nav-bar">
             <div class="header-nav-bar-container">
-                <div class="search-bar-container">
-                    <input type="search" class="header-search-input inactive" placeholder="  Castle in the Sky">
-                    <button class="header-search-btn"><img src="imgs/search-icon.svg" class="header-search-btn-img" alt="" srcset=""></button>
-                </div>
                 <div class="menu-container">
                     <button class="header-menu" onclick="openMenu()"><img src="imgs/menu-icon.png" class="header-menu-img" alt="" srcset=""></button>
                     <ul class="hidden-menu">
                         <button class="header-menu-close" onclick="closeMenu()"><img src="imgs/close-menu-icon.png" class="header-menu-close-img" alt="" srcset=""></button>
 
                         <li>
-                            <a href="" class="menu-category">Home</a></li>
+                            <a class="home-from-menu" href="#">Home</a></li>
                         <li>
-                            <a href="" class="menu-category">Films</a></li>
+                            <a class="films-from-menu" href="#">Films</a></li>
                         <li>
-                            <a href="" class="menu-category">Characters</a></li>
-                        <li>
-                            <a href="" class="menu-category">Places</a></li>
+                            <a href="https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API">API</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,20 +41,20 @@
         <!--main showcase section-->
 
         <section class="main-section" id="main-section">
-            <main>
-                <div class="main-section-title-container">
-                    <h1 class="main-section-title">Ghiblish</h1>
-                    <img src="imgs/studio-ghibli-logo.svg" class="main-section-title-img" alt="" srcset="">
-                </div>
-                <div class="main-section-container">
-                    <div class="slider-track">
-                        <!-- <div class="slide">
+
+            <div class="main-section-title-container">
+                <h1 class="main-section-title">Ghiblish</h1>
+                <img src="imgs/studio-ghibli-logo.svg" class="main-section-title-img" alt="" srcset="">
+            </div>
+            <div class="main-section-container">
+                <div class="slider-track">
+                    <!-- <div class="slide">
                             <img class="main-section-img" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F04%2Fstudio-ghibli-free-wallpaper-download-info-00.jpg?w=960&cbr=1&q=90&fit=max" alt="" srcset="">
                         </div> -->
 
-                    </div>
                 </div>
-            </main>
+            </div>
+
         </section>
 
         <!--Films section-->
@@ -159,6 +153,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="src/nodes.js"></script>
     <script src="src/main.js"></script>
+    <script src="src/navigation.js"></script>
+
 </body>
 
 </html>
