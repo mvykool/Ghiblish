@@ -15,6 +15,20 @@ homeFromMenu.addEventListener("click", () => {
 });
 
 
+//desktop Menu
+
+filmFromMenuDesktop.addEventListener("click", () => {
+    location.hash = "#films";
+    window.location.reload();
+});
+
+homeFromMenuDesktop.addEventListener("click", () => {
+    location.hash = "#home";
+    window.location.reload();
+
+});
+
+
 //back button
 
 backButton.addEventListener("click", () => {
@@ -22,6 +36,27 @@ backButton.addEventListener("click", () => {
     history.back();
     window.location.href = document.referrer;
 });
+
+//back to top
+
+const mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 //movie details
 
@@ -48,6 +83,7 @@ function navigator() {
 
 
 
+
 //functions
 
 function homePage() {
@@ -57,6 +93,7 @@ function homePage() {
     movieDetails.classList.add("inactive");
     filmsSection.classList.add("inactive");
     backButton.classList.add("inactive");
+    upButton.classList.add("inactive");
 }
 
 function filmPage() {
@@ -66,6 +103,8 @@ function filmPage() {
     movieDetails.classList.add("inactive");
     filmsSection.classList.remove("inactive");
     backButton.classList.remove("inactive");
+    upButton.classList.remove("inactive");
+
 }
 
 function moviePage() {
@@ -75,6 +114,8 @@ function moviePage() {
     filmsSection.classList.add("inactive");
     backButton.classList.remove("inactive");
     footerSection.classList.add("inactive");
+    upButton.classList.add("inactive");
+
 
     const [urlBaseOfCategory, movieId] = location.hash.split("=");
 

@@ -7,17 +7,6 @@ const API = axios.create({
     }
 });
 
-//dynamic functions
-
-searchBtn.addEventListener("click", () => {
-    searchBar.classList.remove("inactive");
-});
-
-window.addEventListener("mouseup", (e) => {
-    if (e.target != searchBar) {
-        searchBar.classList.add("inactive");
-    }
-});
 
 //hidden menu
 

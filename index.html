@@ -19,7 +19,7 @@
         <button class="back-arrow"><img src="imgs/back-arrow.png"  class="back-imgs" alt=""></button>
 
         <!--------------------------->
-        <!--header with nav-bar-->
+        <!--header with nav-bar mobile-->
         <section class="header-nav-bar" id="header-nav-bar">
             <div class="header-nav-bar-container">
                 <div class="menu-container">
@@ -37,6 +37,19 @@
                 </div>
             </div>
         </section>
+
+        <!--header desktop -->
+
+        <nav class="desktop-nav-bar">
+            <ul class="desktop-menu">
+                <li>
+                    <a class="home-from-menu-desktop" href="#">Home</a></li>
+                <li>
+                    <a class="films-from-menu-desktop" href="#">Films</a></li>
+                <li>
+                    <a href="https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API">API</a></li>
+            </ul>
+        </nav>
 
         <!--main showcase section-->
 
@@ -73,31 +86,35 @@
 
         <section class="detail-section" id="detail-section">
 
-            <img class="detail-movie-img" alt="" srcset="">
-            <div class="detail-section-container">
+            <div class="detail-box">
+                <img class="detail-movie-img" alt="" srcset="">
+                <div class="detail-section-container">
 
 
-                <div class="detail-info-container">
-                    <div class="glass">
+                    <div class="detail-info-container">
+                        <div class="glass">
 
-                        <h1 class="detail-section-title-jap">
-                            <!-- *movie name in jap < -->
-                        </h1>
-                        <h1 class="detail-section-title">
-                            <!-- titulo normal!-->
-                        </h1>
-                        <p class="detail-text"></p>
-                        <ul class="detail-list">
-                            <li class="detail-director"></li>
-                            <li class="detail-year"></li>
-                            <li class="detail-score"></li>
-                        </ul>
+                            <h1 class="detail-section-title-jap">
+                                <!-- *movie name in jap < -->
+                            </h1>
+                            <h1 class="detail-section-title">
+                                <!-- titulo normal!-->
+                            </h1>
+                            <p class="detail-text"></p>
+                            <ul class="detail-list">
+                                <li class="detail-director"></li>
+                                <li class="detail-year"></li>
+                                <li class="detail-score"></li>
+                            </ul>
 
+                        </div>
                     </div>
                 </div>
 
             </div>
+
         </section>
+        <button onclick="topFunction()" class="up-button inactive" id="myBtn" title="Go to top"><img  class="up-arrow" src="imgs/up-arrow.png" alt="" srcset=""></button>
 
         <!--Footer-->
         <section class="footer-section" id="footer-section">
@@ -125,6 +142,14 @@
                                     <li>Open ticket</li>
                                 </ul>
                             </div>
+                            <div class="col ">
+                                <h1>Support</h1>
+                                <ul>
+                                    <li>Contact us</li>
+                                    <li>Web chat</li>
+                                    <li>Open ticket</li>
+                                </ul>
+                            </div>
                             <div class="col social ">
                                 <h1>Social</h1>
                                 <ul class="footer-social-icons ">
@@ -134,9 +159,10 @@
                                 </ul>
                             </div>
                             <div class="clearfix "></div>
-                            <div id="copyright ">
-                                <h3 class="footer-title "> Ghiblish &copy;</h3>
-                            </div>
+
+                        </div>
+                        <div id="copyright ">
+                            <h3 class="footer-title "> Ghiblish &copy;</h3>
                         </div>
                     </div>
 
