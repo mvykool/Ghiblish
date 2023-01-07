@@ -426,7 +426,7 @@ footer {
 }
 
 .footer .col ul li:hover {
-    color: #ffffff;
+    color: #bbbbbb;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
