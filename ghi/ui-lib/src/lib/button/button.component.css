@@ -1,4 +1,6 @@
 button{
     color: white;
-    background-color: var(--btn);
+    background-color: red;
+    border: none;
+    border-radius: 2rem;
 }
