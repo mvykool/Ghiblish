@@ -1,7 +1,9 @@
 button{
-    color: white;
-    background-color: turquoise;
+    color: darkgreen;
+    background: url('https://i.pinimg.com/564x/93/24/85/93248590366e93d3413c16e317640bb1.jpg') no-repeat center;
+    background-size: cover;
     border: none;
+    cursor: pointer;
     border-radius: .2rem;
     padding: .2rem .6rem;
 }
