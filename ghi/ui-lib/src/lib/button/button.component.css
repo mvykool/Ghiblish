@@ -11,3 +11,7 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+.secondary{
+  background-color: red;
+}

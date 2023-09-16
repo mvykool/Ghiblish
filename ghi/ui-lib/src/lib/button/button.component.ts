@@ -1,14 +1,20 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+const getStyles = (...args: string[]) => ['button', ...args].filter(Boolean);
 
 @Component({
   selector: 'ghi-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
 })
-export class ButtonComponent implements OnInit {
-  @Input('textArea') textArea: string = '';
+export class ButtonComponent {
+  @Input()
+  textArea: string = '';
 
-  constructor() {}
+  @Input()
+  type: 'primary' | 'secondary' | 'third' = 'primary';
 
-  ngOnInit(): void {}
+  public get classes(): string[] {
+    return getStyles(this.type);
+  }
 }

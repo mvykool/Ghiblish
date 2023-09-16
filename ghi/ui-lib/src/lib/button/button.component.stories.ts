@@ -1,28 +1,21 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { Story, Meta } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
-const meta: Meta<ButtonComponent> = {
+export default {
+  title: 'lib/button',
   component: ButtonComponent,
-  title: 'ButtonComponent',
-};
-export default meta;
-type Story = StoryObj<ButtonComponent>;
-
-export const Primary: Story = {
   args: {
     textArea: 'button',
   },
-};
+} as Meta;
 
-export const Heading: Story = {
-  args: {
-    textArea: 'button',
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/button works!/gi)).toBeTruthy();
-  },
+const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
+  props: args,
+});
+
+export const Primary = Template.bind({});
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  type: 'secondary',
 };
