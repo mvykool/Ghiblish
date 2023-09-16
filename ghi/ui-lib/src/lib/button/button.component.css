@@ -8,4 +8,6 @@ button{
     padding: .2rem .6rem;
 }
 
-
+button:hover{
+    cursor: pointer;
+}
