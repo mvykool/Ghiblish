@@ -13,13 +13,13 @@ type Story = StoryObj<ButtonComponent>;
 
 export const Primary: Story = {
   args: {
-    textArea: '',
+    textArea: 'button',
   },
 };
 
 export const Heading: Story = {
   args: {
-    textArea: '',
+    textArea: 'button',
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
