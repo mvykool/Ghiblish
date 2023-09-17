@@ -13,5 +13,9 @@ button:hover{
 }
 
 .secondary{
-  background-color: red;
+  background-color: #09B377;
+}
+
+.third {
+  background-color: #BA250B;
 }

@@ -19,3 +19,8 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   type: 'secondary',
 };
+
+export const Third = Template.bind({});
+Third.args = {
+  type: 'third',
+};
