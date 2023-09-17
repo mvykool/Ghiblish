@@ -18,9 +18,11 @@ export const Primary = Template.bind({});
 export const Secondary = Template.bind({});
 Secondary.args = {
   type: 'secondary',
+  size: 'regular',
 };
 
 export const Third = Template.bind({});
 Third.args = {
   type: 'third',
+  size: 'regular'
 };

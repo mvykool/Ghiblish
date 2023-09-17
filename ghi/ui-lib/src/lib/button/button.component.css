@@ -19,3 +19,7 @@ button:hover{
 .third {
   background-color: #BA250B;
 }
+
+.big{
+  padding: .4rem .8rem;
+}
