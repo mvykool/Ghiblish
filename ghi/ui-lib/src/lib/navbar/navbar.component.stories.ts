@@ -1,24 +1,29 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { Story, Meta } from '@storybook/angular';
 import { NavbarComponent } from './navbar.component';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
-const meta: Meta<NavbarComponent> = {
+export default {
+  title: 'lib/navbar',
   component: NavbarComponent,
-  title: 'NavbarComponent',
-};
-export default meta;
-type Story = StoryObj<NavbarComponent>;
-
-export const Primary: Story = {
-  args: {},
-};
-
-export const Heading: Story = {
-  args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/navbar works!/gi)).toBeTruthy();
+  args: {
+    textArea: 'button',
   },
+} as Meta;
+
+const Template: Story<NavbarComponent> = (args: NavbarComponent) => ({
+
+  props: args,
+});
+
+export const Primary = Template.bind({});
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  type: 'secondary',
+  size: 'regular',
+};
+
+export const Third = Template.bind({});
+Third.args = {
+  type: 'third',
+  size: 'regular',
 };
