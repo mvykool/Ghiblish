@@ -12,12 +12,12 @@ export class ButtonComponent {
   textArea: string = '';
 
   @Input()
-  type: 'primary' | 'secondary' | 'third' = 'primary';
+  type: 'primary' | 'secondary' | 'third' | 'fourth' = 'primary';
 
   @Input()
   size: 'regular' | 'big' | 'small' = 'regular';
 
-    public get classes(): string[] {
+  public get classes(): string[] {
     return getStyles('button', this.type, this.size);
   }
 }

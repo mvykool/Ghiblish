@@ -24,5 +24,11 @@ Secondary.args = {
 export const Third = Template.bind({});
 Third.args = {
   type: 'third',
-  size: 'regular'
+  size: 'regular',
+};
+
+export const Fourth = Template.bind({});
+Fourth.args = {
+  type: 'fourth',
+  size: 'regular',
 };
