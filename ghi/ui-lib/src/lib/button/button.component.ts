@@ -8,8 +8,7 @@ const getStyles = (...args: string[]) => ['button', ...args].filter(Boolean);
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent {
-  @Input()
-  textArea: string = '';
+  @Input() textArea = '';
 
   @Input()
   type: 'primary' | 'secondary' | 'third' | 'fourth' = 'primary';
