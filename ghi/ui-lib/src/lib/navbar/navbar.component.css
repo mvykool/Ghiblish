@@ -1,5 +1,19 @@
 .navbar{
-  background-color: #000;
+  background-color: #58A6DE;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  border-radius: .2rem;
+  justify-content: space-between;
+}
+
+ul{
+
+  display: flex;
+  gap: 2.5rem;
+}
+
+li{
+
+  list-style-type: none;
 }
