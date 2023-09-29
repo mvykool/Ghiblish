@@ -1,43 +1,10 @@
 .navbar{
-  background-color: #58A6DE;
+
+  background-color: #000;
   color: white;
-  padding: .7rem 2rem;
-  display: flex;
-  border-radius: .2rem;
-  justify-content: space-between;
+  padding: 1rem;
 }
 
 ul{
-
-  display: flex;
-  gap: 2rem;
-}
-
-li{
-
-  list-style-type: none;
-  cursor: pointer;
-  padding: .4rem .6rem;
-  transition: 0.5s;
-  border-radius: .3rem;
-}
-
-li:hover{
-  background-color: #2F8AD3;
-}
-
-.secondary{
-  background-color: #5DC35B;
-}
-
-.secondary li:hover{
-  background-color: #294F4D;
-}
-
-.third{
-  background-color: #DD5E59;
-}
-
-.third li:hover{
-  background-color: #9C3A47;
+  display: none;
 }
