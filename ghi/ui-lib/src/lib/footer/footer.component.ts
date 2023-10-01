@@ -11,7 +11,7 @@ export class FooterComponent {
   @Input()
   type: 'default' | 'secondary' | 'third' = 'default';
 
-  public get navbar(): string[] {
+  public get footer(): string[] {
     return getVariants('footer', this.type);
   }
 }
