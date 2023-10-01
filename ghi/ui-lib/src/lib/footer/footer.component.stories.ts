@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/angular';
 import { FooterComponent } from './footer.component';
 
 export default {
-  title: 'lib/navbar',
+  title: 'lib/footer',
   component: FooterComponent,
   args: {},
 } as Meta;
