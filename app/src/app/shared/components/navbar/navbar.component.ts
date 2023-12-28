@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  @Input() links: string[] = ['Home', 'About', 'Contact'];
+  @Output() linkClicked = new EventEmitter<string>();
 
+  onLinkClick(link: string): void {
+    this.linkClicked.emit(link);
+  }
 }
