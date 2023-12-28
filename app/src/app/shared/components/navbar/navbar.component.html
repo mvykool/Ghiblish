@@ -1,12 +1,14 @@
-<nav class="flex w-full bg-nice-gray py-5 justify-around">
-  <h3>Ghiblish</h3>
-  <div>
+<nav class="flex w-full bg-nice-gray py-5 justify-around items-center">
+  <h3 class="font-bold text-3xl">Ghiblish</h3>
+  <div class="flex gap-6 text-lg">
     <a routerLink="/home">Home</a>
     <a routerLink="/about">About</a>
     <a routerLink="/contact">Contact</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/contact">Contact</a>
   </div>
-  <div>
-    <input type="text">
-    <button>Search</button>
+  <div class="flex gap-4">
+    <input type="text" class="outline-none border-none rounded-md text-black p-1">
+    <button class="px-3 py-1 bg-green-500 rounded-md">Search</button>
   </div>
 </nav>
