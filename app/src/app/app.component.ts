@@ -16,7 +16,7 @@ import { BannerComponent } from './shared/components/banner/banner.component';
 export class AppComponent implements OnInit {
   title = 'app';
   navLinks = ['home', 'contact', 'about us', 'settings'];
-  bgImage = 'https://i.pinimg.com/originals/30/21/d8/3021d8083f73885b573df97483de918d.jpg';
+  bgImage = 'https://wallpapercosmos.com/w/full/2/a/b/1198591-3840x2160-desktop-4k-studio-ghibli-background-photo.jpg';
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
