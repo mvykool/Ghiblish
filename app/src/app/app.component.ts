@@ -7,6 +7,10 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { CardsComponent } from './shared/components/cards/cards.component';
 
+interface Card {
+  image: string | undefined;
+}
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,7 +20,7 @@ import { CardsComponent } from './shared/components/cards/cards.component';
 })
 export class AppComponent implements OnInit {
   title: string = 'app';
-  cards: any[] = []
+  cards: Card[] = [];
   navLinks: string[] = ['home', 'contact', 'about us', 'settings'];
   bgImage: string = 'https://wallpapercosmos.com/w/full/2/a/b/1198591-3840x2160-desktop-4k-studio-ghibli-background-photo.jpg';
   constructor(private apiService: ApiService) { }
