@@ -9,7 +9,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  @Input() links: string[] = ['Home', 'About', 'Contact'];
+  @Input() links: string[] = [''];
   @Output() linkClicked = new EventEmitter<string>();
 
   onLinkClick(link: string): void {
