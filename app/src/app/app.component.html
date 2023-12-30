@@ -1,4 +1,6 @@
-<app-navbar [links]="navLinks"></app-navbar>
-<app-banner [image]="bgImage"></app-banner>
-<router-outlet></router-outlet>
-
+<div class="w-10/12 mx-auto">
+  <app-navbar [links]="navLinks"></app-navbar>
+  <app-banner [image]="bgImage"></app-banner>
+  <app-cards  *ngFor="let card of cards" [title]="card.title"></app-cards>
+  <router-outlet></router-outlet>
+</div>
