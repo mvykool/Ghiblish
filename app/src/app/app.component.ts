@@ -9,6 +9,7 @@ import { CardsComponent } from './shared/components/cards/cards.component';
 
 interface Card {
   image: string | undefined;
+  title: string | undefined;
 }
 
 @Component({

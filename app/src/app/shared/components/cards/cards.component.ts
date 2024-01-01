@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardsComponent {
   @Input() image: string | undefined = "";
+  @Input() title: string | undefined = "";
 }
