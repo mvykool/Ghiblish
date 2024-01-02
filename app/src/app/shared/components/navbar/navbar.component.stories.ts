@@ -1,4 +1,4 @@
-import { moduleMetadata } from '@storybook/angular';
+import { StoryFn, moduleMetadata } from '@storybook/angular';
 import { NavbarComponent } from './navbar.component';
 
 export default {
@@ -6,15 +6,23 @@ export default {
   component: NavbarComponent,
   decorators: [
     moduleMetadata({
-      declarations: [NavbarComponent],
+      imports: [NavbarComponent],
     }),
   ],
+  argTypes: {
+    links: { control: 'array' },
+  },
 };
 
-export const Default = () => ({
-  component: NavbarComponent,
+const Template: StoryFn<NavbarComponent> = (args: NavbarComponent) => ({
+  props: args,
   template: `
-    <app-navbar></app-navbar>
+    <app-navbar [links]="args.links"></app-navbar>
   `,
 });
+
+export const Default = Template.bind({});
+Default.args = {
+  links: ["home", "about"],
+};
 

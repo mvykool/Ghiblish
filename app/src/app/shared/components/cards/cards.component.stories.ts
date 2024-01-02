@@ -6,7 +6,7 @@ export default {
   component: CardsComponent,
   decorators: [
     moduleMetadata({
-      declarations: [CardsComponent],
+      imports: [CardsComponent],
     }),
   ],
 };
