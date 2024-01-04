@@ -17,7 +17,7 @@ export default {
 const Template: StoryFn<NavbarComponent> = (args: NavbarComponent) => ({
   props: args,
   template: `
-    <app-navbar [links]="args.links"></app-navbar>
+    <app-navbar [links]="args?.links"></app-navbar>
   `,
 });
 
