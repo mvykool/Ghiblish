@@ -1,27 +1,71 @@
-# App
+# Fixus - Focus Enhancer Chrome Extension
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+A Chrome extension that helps you stay focused by blocking distracting websites like Twitter, Reddit, YouTube, Pinterest, and more.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Block distracting websites to improve focus and productivity
+- Customizable list of blocked sites
+- Easy toggle to enable/disable blocking
+- Focus page with motivational quotes and a Pomodoro timer
+- Simple and clean user interface
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Download or clone this repository to your local machine
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" by toggling the switch in the top right corner
+4. Click "Load unpacked" and select the directory containing the extension files
+5. The Fixus extension icon should now appear in your Chrome toolbar
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Blocking Websites
 
-## Running unit tests
+By default, the extension blocks:
+- Twitter
+- Reddit
+- YouTube
+- Pinterest
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can add or remove sites from the blocked list by clicking on the extension icon and using the popup interface.
 
-## Running end-to-end tests
+### Adding a Site to Block
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Click on the Fixus icon in your Chrome toolbar
+2. Enter the site you want to block in the input field
+   - You can enter just the domain (e.g., `facebook.com`) or use wildcard patterns (e.g., `*://*.facebook.com/*`)
+3. Click "Add" or press Enter
 
-## Further help
+### Removing a Site from Block List
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Click on the Fixus icon in your Chrome toolbar
+2. Find the site you want to unblock in the list
+3. Click the "Remove" button next to it
+
+### Enabling/Disabling Blocking
+
+You can temporarily disable the blocking feature by toggling the switch at the top of the popup.
+
+### Focus Timer
+
+When you try to access a blocked site, you'll be redirected to a focus page that includes a 25-minute Pomodoro timer to help you stay productive.
+
+## Customization
+
+You can customize the extension by modifying the following files:
+- `background.js` - Core blocking logic
+- `popup.html` and `popup.js` - User interface for the popup
+- `focus.html` - The page shown when a site is blocked
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue if you have suggestions for improvements.
+
+---
+
+Built with ❤️ to help you stay focused and productive. 

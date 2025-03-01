@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stay Focused!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #e74c3c;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    
+    .quote {
+      font-style: italic;
+      color: #7f8c8d;
+      margin: 30px 0;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      background-color: #f9f9f9;
+      text-align: left;
+    }
+    
+    .quote-author {
+      display: block;
+      text-align: right;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    
+    .timer {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 30px 0;
+      color: #2c3e50;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    
+    .button:hover {
+      background-color: #2980b9;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Site Blocked</h1>
+    
+    <p>This site has been blocked by <strong>Fixus</strong> to help you stay focused and productive.</p>
+    
+    <div class="quote">
+      "The successful warrior is the average man, with laser-like focus."
+      <span class="quote-author">— Bruce Lee</span>
+    </div>
+    
+    <p>Remember why you installed this extension. Take a deep breath and get back to what matters.</p>
+    
+    <div class="timer" id="focus-timer">25:00</div>
+    
+    <button class="button" id="start-timer">Start Focus Timer</button>
+    
+    <div class="footer">
+      <p>To modify your blocked sites, click on the Fixus extension icon.</p>
+    </div>
+  </div>
+  
+  <script src="focus.js"></script>
+</body>
+</html> 

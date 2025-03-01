@@ -1,8 +1,0 @@
-<div class="w-10/12 mx-auto">
-  <app-navbar [links]="navLinks"></app-navbar>
-  <app-banner [image]="bgImage"></app-banner>
-  <div class="flex flex-wrap justify-center mx-auto">
-     <app-cards *ngFor="let card of cards" [image]="card?.image" [title]="card?.title"></app-cards>
-  </div>
-   <router-outlet></router-outlet>
-</div>
