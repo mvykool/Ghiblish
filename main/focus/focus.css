@@ -1,6 +1,6 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #09122c;
+  background-color: #1a1a1d;
   color: #dcd7c9;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 600px;
   padding: 40px;
-  background-color: white;
+  background-color: #343131;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

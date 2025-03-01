@@ -8,7 +8,7 @@ const DEFAULT_BLOCKED_SITES = [
 ];
 
 // Default redirect URL (a focus page)
-const REDIRECT_URL = chrome.runtime.getURL("focus.html");
+const REDIRECT_URL = chrome.runtime.getURL("./focus/focus.html");
 
 // Initialize storage with default values if not set
 chrome.runtime.onInstalled.addListener(() => {
@@ -87,4 +87,3 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 });
-
