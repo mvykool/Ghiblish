@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const strings = [
     "The successful warrior is the average man, with laser-like focus.",
     "not being where you want to be, should be enough motivation.",
+    "Everyone waits for the right time, when they really should've started a long time ago",
+    "No success until you accept the pain of discipline.",
+    "Nothing gets easier, you just get better.",
   ];
 
   function quotesFn() {
@@ -76,4 +79,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize timer display
   updateTimerDisplay();
 });
-
