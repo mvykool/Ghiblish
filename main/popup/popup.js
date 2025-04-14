@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const blockingToggle = document.getElementById("blocking-toggle");
+  const container = document.querySelector(".toggle-container");
   const siteList = document.getElementById("site-list");
   const newSiteInput = document.getElementById("new-site");
   const addButton = document.getElementById("add-btn");
@@ -29,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleBlocking() {
     const isActive = blockingToggle.checked;
+    if (isActive) {
+      container.style.display = "none";
+    }
     chrome.runtime.sendMessage({
       action: "toggleActive",
       isActive: isActive,
@@ -104,4 +108,3 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 });
-
